@@ -26,7 +26,7 @@
 	<body>
 
 		<div class="page page--dashboard">
-			<aside class="page__aside aside vertical">
+			<aside class="page__aside aside vertical vertical--big">
 				<div class="aside__logo text">Sidebar</div>
 				<nav class="vertical vertical--small">
 					<a href="#" class="nav-button nav-button--active click">
@@ -41,7 +41,7 @@
 						<span class="icon nav-button__icon" style="background-image: url('/img/svg/nav/products.svg')"></span>
 						<span class="text text--light">Products</span>
 					</a>
-					<div class="field__block click">
+					<div class="field__block relative click">
 					<div class="field field--select">
 						<span class="text text--light">Choose..</span>
 						<span class="icon nav-button__icon" style="background-image: url('/img/svg/payment/down.svg')"></span>
@@ -59,7 +59,7 @@
 				
 				<div class="layout header__content text--small">
 					
-					<div class="header__search">
+					<div class="header__search relative">
 					<input type="text" placeholder="Search" class="text field field--header">
 					{{!-- <label for="search" class="text_label">Search</label> --}}
 					<span class="icon header__icon-search" style="background-image: url('/img/svg/nav/header/search.svg')"></span>
@@ -80,10 +80,33 @@
 			</header>
 			<main class="main">
 				<div class="layout">
-					<section class="box analytic_block">
-						<div class="analytic">
+					<section class="box analytic__block">
+						<div class="analytic analytic--double analytic--blue text">
+							
 							<span class="icon analytic__button icon--button icon--color-blue click" style="background-image: url('/img/svg/analytic/order.svg')"></span>
+							
+							<div class="analytic__content relative vertical vertical--small">
+								<div class="analytic__title text text--light">$961</div>
+								<div class="analytic__info text text--small text--light">Total Order</div>
+
+								<span class="icon analytic__arrow" style="background-image: url('/img/svg/analytic/arrow.svg')"></span>
+							</div>
 						</div>
+						<div class="analytic analytic--double text analytic--blue">test</div>
+						<div class="analytic text">
+							<div class="analytic text">test</div>
+						</div>
+						<div class="analytic text">
+							<div class="analytic text">test</div>
+						</div>
+					</section>
+				</div>
+				<div class="main-double">
+					<section class="box">
+						<div class="purchaise">Purchaise</div>
+					</section>
+					<section class="box">
+						<div class="payment">Payment</div>
 					</section>
 				</div>
 			</main>
