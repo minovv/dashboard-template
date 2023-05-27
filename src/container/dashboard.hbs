@@ -41,7 +41,7 @@
 						<span class="icon nav-button__icon" style="background-image: url('/img/svg/nav/products.svg')"></span>
 						<span class="text text--light">Products</span>
 					</a>
-					<div class="field__block relative click">
+					{{!-- <div class="field__block relative click">
 					<div class="field field--select">
 						<span class="text text--light">Choose..</span>
 						<span class="icon nav-button__icon" style="background-image: url('/img/svg/payment/down.svg')"></span>
@@ -52,7 +52,7 @@
 							<option disabled value="Russia">Russia</option>
 							<option selected value="Ukraine">Ukraine</option>
 					</select>
-					</div>
+					</div> --}}
 				</nav>
 			</aside>
 			<header class="header">
@@ -60,8 +60,7 @@
 				<div class="layout header__content text--small">
 					
 					<div class="header__search relative">
-					<input type="text" placeholder="Search" class="text field field--header">
-					{{!-- <label for="search" class="text_label">Search</label> --}}
+					<input type="text" placeholder="Search" class="text field field--header">					
 					<span class="icon header__icon-search" style="background-image: url('/img/svg/nav/header/search.svg')"></span>
 					<span class="icon icon--header-settings icon--button icon--color-blue click" style="background-image: url('/img/svg/nav/header/settings.svg')"></span>
 				    </div>
@@ -120,11 +119,107 @@
 				<div class="main-double">
 					<section class="box">
 						<div class="purchaise">
-							<div class="purchaise_title text">Purchase list</div>
+							<div class="purchaise__title text vertical">Purchase list</div>
+						</div>
+						<div class="divider">
+							<hr/>
+						</div>
+						<div class="purchaise--list">
+							<span class="text">ID437661</span>
+							<span class="text">AirOn ProCam</span>
+							<span class="text">132.32 EUR</span>
+							<span class="text">Customer</span>
+							<span class="text">May 11, 2023, 14:21</span>
+							<span class="text">7/8 USB Type-C</span>
+							<span class="text span--warning">Not paid</span>
+							<span class="text">robin@com.de</span>
+						</div>
+						
+						<div class="divider">
+							<hr/>
+						</div>
+						<div class="purchaise--list">
+							<span class="text">ID437661</span>
+							<span class="text">PHILIPS Essential</span>
+							<span class="text">543 USD</span>
+							<span class="text">Customer</span>
+							<span class="text">May 11, 2023, 14:21</span>
+							<span class="text">HD9200/90</span>
+							<span class="text span--success">Pay by  Stripe</span>
+							<span class="text">dima@com.ua</span>
 						</div>
 					</section>
 					<section class="box">
-						<div class="payment">Payment</div>
+						<div class="purchaise__title text vertical">Payment</div>
+						<div class="divider">
+							<hr/>
+						</div>
+						<div class="payment--form">
+						<div class="radio">
+							<input type="radio" id="CreditCard" name="PaymentType" class="radio" value="CreditCard">
+						<label for="CreditCard" class="text">Credit Card</label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="DebitCard" name="PaymentType" value="DebitCard" class="radio">
+						<label for="DebitCard"class="text">Debit Card</label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="PayPal" name="PaymentType" class="radio" value="PayPal">
+						<label for="PayPal" class="text">PayPal</label>
+						</div>
+						<div class="card--details">
+							<label for="search" class="text text_label">Name on card</label>
+							<label for="search" class="text text_label">Credit card number</label>
+							<input type="text" class="text field">							
+							<input type="text" class="text field">					
+						</div>
+						<div class="card--details">
+							<label for="search" class="text text_label">Expiration</label>
+							<label for="search" class="text text_label">CVV</label>
+							<input type="text" class="text field">							
+							<input type="text" class="text field">					
+						</div>							
+						<div class="divider">
+							<hr/>
+						</div>
+
+						<div class="card--details">							
+							<div class="field__block relative click">
+									<label for="select" class="text text_label">Country</label>
+						<div class="field field--select">
+								<span class="text">Choose..</span>
+								<span class="icon nav-button__icon" style="background-image: url('/img/svg/payment/down.svg')"></span>
+						</div>
+						<select class="field__select text">
+							<option value="Austria">Austria</option>
+							<option value="Belgium">Belgium</option>
+							<option value="Ukraine">Ukraine</option>
+						</select>
+						</div>
+						<div class="field__block relative click">
+									<label for="select" class="text text_label">State</label>
+						<div class="field field--select">
+								<span class="text">Choose..</span>
+								<span class="icon nav-button__icon" style="background-image: url('/img/svg/payment/down.svg')"></span>
+						</div>
+						<select class="field__select text">
+							<option value="Austria">Austria</option>
+							<option value="Belgium">Belgium</option>
+							<option value="Ukraine">Ukraine</option>
+						</select>
+						</div>
+												
+						</div>
+						
+						<div class="divider">
+							<hr/>	
+						</div>
+
+						<div class="checkout-button">
+							<a href="#" class="checkout-button text text--light">Continue to checkout</a>
+						</div>
+						</div>
+																
 					</section>
 				</div>
 			</main>
