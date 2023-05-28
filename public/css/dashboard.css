@@ -73,7 +73,8 @@ body {
 	.main-double {		
 		display: grid;
 		grid-template-columns: 1fr 450px;
-		gap: var(--spacing-9);
+		gap: var(--spacing-5);
+		align-content: flex-start;
 	}
 
 	.vertical {
@@ -223,9 +224,15 @@ body {
 		right: var(--spacing-2);
 	}
 
+	.header--icon-settings {
+		height: 24px;
+		width: 24px;
+	}
+
 	.field__block {
 		display: grid;
-		gap: var(--spacing-4);
+		gap: var(--spacing-2);
+		align-content: flex-start;
 		
 		
 	}
@@ -334,9 +341,10 @@ body {
 	}
 
 	.header__icon {
-		display: inline-block;
-		height: 24px;
-		width: 24px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: var(--spacing-2);
 	}
 
 	.field--header {
@@ -356,7 +364,7 @@ body {
 	}
 
 	.icon--color-blue {
-		background-color: var(--color-blue-dark);
+		background-color: var(--color-blue-dark);		
 	}
 
 	.icon--color-purple {
@@ -364,11 +372,13 @@ body {
 	}
 
 	.icon--color-beige {
-		background-color: rgba(255, 248, 227, 1);
+		background-color: rgba(255, 248, 227, 1);		
 	}
 
 	.icon--color-skyblue {
 		background: rgba(225, 243, 252, 1);
+		height: 32px;
+		width: 32px;
 	}
 
 	.field--select {
@@ -376,6 +386,7 @@ body {
 		align-items: center;
 		justify-content: space-between;
 		position: relative;	
+		align-content: flex-start;
 	}
 
 	.analytic--double {
@@ -383,8 +394,10 @@ body {
 	}
 
 	.analytic--half {
+		border-radius: 8px;
+		padding: var(--spacing-5);
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;	
 		align-items: flex-start;
@@ -407,6 +420,7 @@ body {
 		display: grid;				
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: 1fr 1fr;
+		align-content: flex-start;
 	}
 
 	.span--warning {
@@ -421,7 +435,8 @@ body {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(3, 1fr);
-		gap: var(--spacing-2);		
+		gap: var(--spacing-2);	
+		align-content: flex-start;	
 	}
 
 	.card--details {
@@ -429,6 +444,7 @@ body {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: 1fr 1fr;
 		padding-top: var(--spacing-4);
+		align-content: flex-start;
 	}
 
 
@@ -439,6 +455,13 @@ body {
 		.page--dashboard {
 			grid-template-columns: 1fr;
 			/* grid-template-rows: min-content 1fr;	 */
+		}
+
+		@media all and (width <= 1000px) {
+			.main-double {
+				grid-template-columns: 1fr;
+				/* grid-template-rows: min-content 1fr;	 */
+			}
 		}
 
 		.aside {
