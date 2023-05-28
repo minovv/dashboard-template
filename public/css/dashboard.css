@@ -376,9 +376,7 @@ body {
 	}
 
 	.icon--color-skyblue {
-		background: rgba(225, 243, 252, 1);
-		height: 32px;
-		width: 32px;
+		background: rgba(225, 243, 252, 1)
 	}
 
 	.field--select {
