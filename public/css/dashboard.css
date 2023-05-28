@@ -153,6 +153,7 @@ body {
 		border-radius: var(--radius-1);
 	}
 
+
 	
 
 	.box {
@@ -231,9 +232,8 @@ body {
 
 	.field__block {
 		display: grid;
-		gap: var(--spacing-2);
-		align-content: flex-start;
-		
+		gap: var(--spacing-4);
+		align-content: flex-start;		
 		
 	}
 
@@ -388,6 +388,7 @@ body {
 
 	.field--select {
 		display: flex;
+		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
 		position: relative;	
@@ -446,10 +447,9 @@ body {
 
 	.card--details {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 		padding-top: var(--spacing-4);
-		align-content: flex-start;
+		
 	}
 
 
