@@ -92,7 +92,7 @@ body {
 	.icon {
 		display: block;
 		background-repeat: no-repeat;
-		background-attachment: center center;
+		background-position: center center;
 	}
 
 	.nav-button {
@@ -363,6 +363,13 @@ body {
 		
 	}
 
+	.icon--button-big {
+		border-radius: var(--radius-1);
+		width: 32px;
+		height: 32px;
+		
+	}
+
 	.icon--color-blue {
 		background-color: var(--color-blue-dark);		
 	}
@@ -376,7 +383,7 @@ body {
 	}
 
 	.icon--color-skyblue {
-		background: rgba(225, 243, 252, 1)
+		background-color: rgba(225, 243, 252, 1)
 	}
 
 	.field--select {
